@@ -1,10 +1,9 @@
 import { createRxComponent, funcSubject } from '../';
-import React, { Component, PropTypes } from 'react/addons';
+import React, { Component, PropTypes } from 'react';
+import TestUtils from 'react-addons-test-utils';
 import { Observable } from 'rx';
 import jsdom from './jsdom';
 import sinon from 'sinon';
-
-const { TestUtils } = React.addons;
 
 function createSmartButton(render) {
   return createRxComponent((props$ => {
